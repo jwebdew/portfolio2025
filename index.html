@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정리</title>
+    <link rel="stylesheet" href="lib/swiper-bundle.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.scss">
+
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="lib/swiper-bundle.js"></script>
+    <!-- <script src="lib/gsap.min.js"></script> -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="lib/ScrollTrigger.min.js"></script>
+    <script src="lib/ScrollSmoother.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- 지메일, 깃허브 아이디
+     sujeong.me@gmail.com -->
+    <div id="wrap">
+        <header class="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="#!">
+                        <!-- <img src="img/logo.png" alt="하수정"> -->
+                        Su-Jeong
+                    </a>
+                </h1><!-- .logo -->
+
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#!" class="depth-01">언어</a>
+                            <ul class="depth-02">
+                                <li><a href="#">html</a></li>
+                                <li><a href="#">css</a></li>
+                                <li><a href="#">javascript/jQuery</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!" class="depth-01">예제</a>
+                            <ul class="depth-02">
+                                <li><a href="#">이벤트/카드뉴스</a></li>
+                                <li><a href="#">상세페이지</a></li>
+                                <li><a href="#">ui/ux</a></li>
+                                <li><a href="#">web/responsive</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!" class="depth-01">가이드</a>
+                            <ul class="depth-02">
+                                <li><a href="#">피그마</a></li>
+                                <li><a href="#">디자인</a></li>
+                                <li><a href="#">퍼블리싱</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!" class="depth-01">훈련생결과물</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="depth-01">포트폴리오</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!-- .inner end -->
+        </header><!-- .header end -->
+
+
+        <main id="main">
+            <section class="main_visual">
+                <div class="text_wrap" trigger class="container">
+                    <h2>su-jeong</h2>
+                    <p>안녕하세요. <strong>하수정</strong> 입니다.<br />
+                        웹에이전시에서는 웹디자이너&웹퍼블리셔로,<br />
+                        교육기관에서는 웹교육 과정을 강의하는 강사로서 쌓아온 자료들입니다.<br />
+                        저의 성장 과정을 담은 포트폴리오를 즐겁게 봐주시면 감사하겠습니다.</p>
+
+                </div><!-- .text_wrap end -->
+
+
+
+            </section><!-- .main_visual -->
+
+
+
+            <div class="content_wrap">
+                <section class="section newItem">
+                    <div class="inner">
+                         
+                        <div class="heading center">
+                            <h3>Whit's New</h3>
+                            <p>최신 수업 자료와 작업물이 업로드되는 공간입니다.<br />
+                               최근에 진행한 디자인과 강의 콘텐츠 요약, 코드, 리디자인 프로젝트 등을 지속적으로 업데이트합니다.</p>
+                            <!-- <ul class="web-btns">
+                                <li class="btn-view_site"><a href="https://www.figma.com/design/NMPHxLI7gw4rlXWHFw9IUW/whit-new?node-id=0-1&p=f&t=dogNblUgiYZbFppL-0" target="_blank">Go to Figma<span>→</span></a></li>
+                                <li class="btn-view_site"><a href="https://github.com/sujeong-i/new" target="_blank">Go to Github<span>→</span></a></li>
+                            </ul> -->
+                        </div><!-- heading end -->
+                        <div class="list">
+                            <div class="list_wrap" id="newItems">
+                                 
+                                <div class="item">
+                                    <a href="https://sujeong-i.github.io/new/p_basic-01.html" target="_blank">
+                                        <div class="image">
+                                            <img src="img/content-01.jpg" alt="웹기초 레이아웃">
+                                        </div>
+                                        <div class="text">
+                                            <h4 class="title">[웹코딩] 웹기초 1단 레이아웃</h4>
+                                            <p class="txt">코딩 입문자용 | flex를 활용하여 가로 배치할 수 있으며, 이미지, 여백 등을 조절하고 컨테이너를 가운데 배치할 수 있다.
+                                            </p>
+                                            <span class="date">2025.06.02</span>
+                                            <!-- <ul class="tag">
+                                                <li>피그마</li>
+                                                <li>html/css</li>
+                                                <li>javascript</li>
+                                                <li>jquery</li>
+                                                <li>swiper</li>
+                                            </ul> --><!-- .tag end -->
+                                        </div><!-- .text end -->
+                                    </a>
+                                </div><!-- .item end -->
+                                <div class="item">
+                                    <a href="https://sujeong-i.github.io/new/p_basic-02.html" target="_blank">
+                                        <div class="image">
+                                            <img src="img/content-02.jpg" alt="웹기초 레이아웃">
+                                        </div>
+                                        <div class="text">
+                                            <h4 class="title">[웹코딩] 웹기초 레이아웃</h4>
+                                            <p class="txt">코딩 입문자용 | a태그를 이용하여 버튼의 스타일을 만들 수 있으며, hover효과를 추가할 수 있다.</p>
+                                            <span class="date">2025.06.04</span>
+                                            <!-- <ul class="tag">
+                                                <li>피그마</li>
+                                                <li>html/css</li>
+                                                <li>javascript</li>
+                                                <li>jquery</li>
+                                                <li>swiper</li>
+                                            </ul> --><!-- .tag end -->
+                                        </div><!-- .text end -->
+                                    </a>
+                                </div><!-- .item end -->
+                                <div class="item">
+                                    <a href="https://sujeong-i.github.io/new/p_basic-position.html" target="_blank">
+                                        <div class="image">
+                                            <img src="img/content-03.jpg" alt="웹기초 레이아웃">
+                                        </div>
+                                        <div class="text">
+                                            <h4 class="title">[웹코딩] 웹기초 레이아웃</h4>
+                                            <p class="txt">코딩 입문자용 | position개념 익히기 첫 단계, CSS 속성인 position을 이용하여 img위에 텍스트 배치하고, 원하는 위치로 이동시켜줄
+                                                수 있다. </p>
+                                            <span class="date">2025.06.09</span>
+                                            <!-- <ul class="tag">
+                                                <li>피그마</li>
+                                                <li>html/css</li>
+                                                <li>javascript</li>
+                                                <li>jquery</li>
+                                                <li>swiper</li>
+                                            </ul> --><!-- .tag end -->
+                                        </div><!-- .text end -->
+                                    </a>
+                                </div><!-- .item end -->
+
+                                <div class="item">
+                                    <a href="https://www.notion.so/2c6427abb2af805c93f6c53f524d44fa?source=copy_link" target="_blank">
+                                        <div class="image">
+                                            <img src="img/content-05.jpg" alt="웹기초 레이아웃">
+                                        </div>
+                                        <div class="text">
+                                            <h4 class="title">[uiux이론] 모바일 폰트 사이트</h4>
+                                            <p class="txt">모바일화면 디자인 제작 시 폰트크기의 기본값을 설정하고 진행할 수 있다.</p>
+                                            <span class="date">2025.06.09</span>
+                                            <!-- <ul class="tag">
+                                                <li>피그마</li>
+                                                <li>html/css</li>
+                                                <li>javascript</li>
+                                                <li>jquery</li>
+                                                <li>swiper</li>
+                                            </ul> --><!-- .tag end -->
+                                        </div><!-- .text end -->
+                                    </a>
+                                </div><!-- .item end -->
+                            </div><!-- list_wrap -->
+                        </div><!-- .list end -->
+                    </div><!-- .inner end -->
+                </section><!-- sec-01 -->
+                <section class="section portfolio ">
+                    <div class="inner-big heading">
+                        <h3>Portfolio ></h3>
+                        <p>포트폴리오 공간입니다. <br />
+                            실무 기반의 웹디자인·퍼블리싱 프로젝트를 중심으로,<br /> <!-- 기획 과정부터 --> 결과물을 확인할 수 있는 작업 모음입니다.</p>
+                    </div><!-- inner-big heading end -->
+                    <div class="portfolio_wrap has-audio">
+                        <div class="inner-big menu">
+                            <ul>
+                                <li class="active">
+                                    <strong>f5nature</strong>
+                                    <p>반응형 웹사이트 리뉴얼.<br />소품샵 웹사이트</p>
+                                </li>
+                                <li>
+                                    <strong>비에메종</strong>
+                                    <p>반응형 웹사이트 리뉴얼.<br />소품샵 웹사이트</p>
+                                </li>
+                                <li>
+                                    <strong>스미스티</strong>
+                                    <p>반응형 웹사이트 리뉴얼.<br />소품샵 웹사이트</p>
+                                </li>
+                                <li>
+                                    <strong>트립비토즈</strong>
+                                    <p>반응형 웹사이트 리뉴얼.<br />숙소 예약 + 여행 콘텐츠 플랫폼 웹사이트</p>
+                                </li>
+                                <li>
+                                    <strong>베블리투어</strong>
+                                    <p>반응형 웹사이트 제작<br />베트남 여행 사이트<br /></p>
+                                </li>
+                            </ul>
+                        </div><!-- .&-menu end -->
+                        <div class="list inner-big">
+                            <div class="item active">
+                                <div class="image">
+                                    <img src="img/portfolio/에프오네이처.png" alt="에프오네이처 리뉴얼 이미지">
+                                </div><!-- .image end -->
+                                <div class="info">
+                                    <h4>f5nature</h4>
+                                    <p>감성적인 느낌의 캔들의 이미지들은 잘 표현되었으나, 시각적 계층, 정보의 표현 및 전달이 부족하다라는 느낌을 받았습니다.<br />
+                                        감성적인 느낌을 지닌 오브제들의 이미지를 부각시키면서 사용자들에게 필요한 정보를 명확히 전달하고, 깔끔하면서 깨끗한 느낌을 주기 위해
+                                        이미지 중점인 그리드 레이아웃에 맞춰 제작하였습니다.</p>
+                                    <ul class="tag">
+                                        <li>html</li>
+                                        <li>css</li>
+                                        <li>javascript</li>
+                                        <li>피그마</li>
+                                        <li>반응형</li>
+                                        <li>접근성</li>
+                                        <li>기획/설계/제작/구현</li>
+                                    </ul>
+                                    <div class="btns-qr">
+                                        <ul class="btns">
+                                            <li class="point"><a href="https://jwebdew.github.io/f5nature/"
+                                                    target="_blank">사이트 바로가기</a></li>
+                                            <!-- <li><a href="#">프로세스</a></li> -->
+                                            <li><a href="#">피그마 디자인</a></li>
+                                        </ul><!-- btns end -->
+                                        <div class="qr-image">
+                                            <img src="img/qr-f5natuer.png" alt="비에메종 리뉴얼 qr코드 이미지">
+                                        </div><!-- .qr-image -->
+                                    </div>
+                                </div>
+                            </div><!-- .item end -->
+
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/portfolio/비에메종.jpg" alt="비에메종 리뉴얼 이미지">
+                                </div><!-- .image end -->
+                                <div class="info">
+                                    <h4>비에메종</h4>
+                                    <p>감성적인 느낌의 캔들의 이미지들은 잘 표현되었으나, 시각적 계층, 정보의 표현 및 전달이 부족하다라는 느낌을 받았습니다.<br />
+                                        감성적인 느낌을 지닌 오브제들의 이미지를 부각시키면서 사용자들에게 필요한 정보를 명확히 전달하고, 깔끔하면서 깨끗한 느낌을 주기 위해
+                                        이미지 중점인 그리드 레이아웃에 맞춰 제작하였습니다.</p>
+                                    <ul class="tag">
+                                        <li>html</li>
+                                        <li>css</li>
+                                        <li>javascript</li>
+                                        <li>피그마</li>
+                                        <li>반응형</li>
+                                        <li>접근성</li>
+                                        <li>기획/설계/제작/구현</li>
+                                    </ul>
+                                    <div class="btns-qr">
+                                        <ul class="btns">
+                                            <li class="point"><a href="https://jwebdew.github.io/vieetmaison/"
+                                                    target="_blank">사이트 바로가기</a></li>
+                                            <!-- <li><a href="#">프로세스</a></li> -->
+                                            <li><a href="#">피그마 디자인</a></li>
+                                        </ul><!-- btns end -->
+                                        <div class="qr-image">
+                                            <img src="img/qr-f5natuer.png" alt="비에메종 리뉴얼 qr코드 이미지">
+                                        </div><!-- .qr-image -->
+                                    </div>
+                                </div>
+                            </div><!-- .item end -->
+
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/portfolio/스미스티.jpg" alt="스미스티 리뉴얼 이미지">
+                                </div><!-- .image end -->
+                                <div class="info">
+                                    <h4>스미스티</h4>
+                                    <p>감성적인 느낌의 캔들의 이미지들은 잘 표현되었으나, 시각적 계층, 정보의 표현 및 전달이 부족하다라는 느낌을 받았습니다.<br />
+                                        감성적인 느낌을 지닌 오브제들의 이미지를 부각시키면서 사용자들에게 필요한 정보를 명확히 전달하고, 깔끔하면서 깨끗한 느낌을 주기 위해
+                                        이미지 중점인 그리드 레이아웃에 맞춰 제작하였습니다.</p>
+                                    <ul class="tag">
+                                        <li>html</li>
+                                        <li>css</li>
+                                        <li>javascript</li>
+                                        <li>피그마</li>
+                                        <li>반응형</li>
+                                        <li>접근성</li>
+                                        <li>기획/설계/제작/구현</li>
+                                    </ul>
+                                    <div class="btns-qr">
+                                        <ul class="btns">
+                                            <li class="point"><a href="https://jwebdew.github.io/vieetmaison/"
+                                                    target="_blank">사이트 바로가기</a></li>
+                                            <!-- <li><a href="#">프로세스</a></li> -->
+                                            <li><a href="#">피그마 디자인</a></li>
+                                        </ul><!-- btns end -->
+                                        <div class="qr-image">
+                                            <img src="img/qr-f5natuer.png" alt="비에메종 리뉴얼 qr코드 이미지">
+                                        </div><!-- .qr-image -->
+                                    </div>
+                                </div>
+                            </div><!-- .item end -->
+
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/portfolio/트립비토즈.jpg" alt="트립비토즈 리뉴얼 이미지">
+                                </div><!-- .image end -->
+                                <div class="info">
+                                    <h4>트립비토즈</h4>
+                                    <p>감성적인 느낌의 캔들의 이미지들은 잘 표현되었으나, 시각적 계층, 정보의 표현 및 전달이 부족하다라는 느낌을 받았습니다.<br />
+                                        감성적인 느낌을 지닌 오브제들의 이미지를 부각시키면서 사용자들에게 필요한 정보를 명확히 전달하고, 깔끔하면서 깨끗한 느낌을 주기 위해
+                                        이미지 중점인 그리드 레이아웃에 맞춰 제작하였습니다.</p>
+                                    <ul class="tag">
+                                        <li>html</li>
+                                        <li>css</li>
+                                        <li>javascript</li>
+                                        <li>피그마</li>
+                                        <li>반응형</li>
+                                        <li>접근성</li>
+                                        <li>기획/설계/제작/구현</li>
+                                    </ul>
+                                    <div class="btns-qr">
+                                        <ul class="btns">
+                                            <li class="point point-coming_soon"><a href="https://jwebdew.github.io/vieetmaison/"
+                                                    target="_blank">사이트 바로가기 [준비중]</a></li>
+                                            <!-- <li><a href="#">프로세스</a></li> -->
+                                            <li><a href="https://www.figma.com/design/AOFe75sdbO8OggPNuaQNvU/%EB%A6%AC%EB%89%B4%EC%96%BC_%EB%B0%98%EC%9D%91%ED%98%95_%ED%8A%B8%EB%A6%BD%EB%B9%84%ED%86%A0%EC%A6%88?node-id=0-1&p=f&t=3UPkcN8cCum0ddkX-0" target="_blank">피그마 디자인</a></li>
+                                        </ul><!-- btns end -->
+                                        <div class="qr-image">
+                                            <img src="img/qr-f5natuer.png" alt="비에메종 리뉴얼 qr코드 이미지">
+                                        </div><!-- .qr-image -->
+                                    </div>
+                                </div>
+                            </div><!-- .item end -->
+
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/portfolio/work/main_beverlytour_design.jpg" alt="베블리투어 리뉴얼 이미지">
+                                </div><!-- .image end -->
+                                <div class="info">
+                                    <h4>베블리투어</h4>
+                                    <p>베블리투어는 두번째 웹에이전시 근무 시절(2018 ~ 2019) 제작한 것으로 기존 없던 사이트였기에 모든 내용들은 제가 카피라이터 하면서 제작하였습니다.  베트남의 상징컬러는 붉은색이였기에 포인트로 선정하여 디자인하고 코등을 진행하였습니다.</p>
+                                    <ul class="tag">
+                                        <li>html</li>
+                                        <li>css</li> 
+                                        <li>jquery</li>
+                                        <li>반응형</li>
+                                        <li>포토샵</li>
+                                    </ul>
+                                    <div class="btns-qr">
+                                        <ul class="btns">
+                                            <li class="point"><a href="http://vevelytour.com/mall/index.php"
+                                                    target="_blank">사이트 바로가기</a></li>
+                                            <!-- <li><a href="#">프로세스</a></li> -->
+                                            <li><a href="img/portfolio/work/main_beverlytour_design.jpg" target="_blank">포토샵 디자인</a></li>
+                                        </ul><!-- btns end -->
+                                        <div class="qr-image">
+                                            <img src="img/qr-f5natuer.png" alt="비에메종 리뉴얼 qr코드 이미지">
+                                        </div><!-- .qr-image -->
+                                    </div>
+                                </div>
+                            </div><!-- .item end -->
+
+                        </div><!-- .list end -->
+                    </div><!-- portfolio_wrap -->
+                </section><!-- .portfolio end -->
+                <section class="section graphic">
+                    <div class="inner-big">
+                        <div class="heading_wrap">
+                            <div class="heading">
+                                <h3>Graphic Design</h3>
+                                <p>그래픽 디자인 공간입니다. <br />
+                                     디자인 프로그램을 활용해 제작한 이벤트 페이지 및 실습 예제 파일로, 수업에서 활용하면서 실무 감각을 익히기 위해 제작하였습니다.</p>
+                            </div>
+                            <a href="#" class="btn-more">view more</a>
+                            <div class="swiper-button_wrap">
+                                <div class="swiper-button-prev">
+                                    <img src="img/icon-arrow-prev.svg" alt="이전 슬라이드">
+                                </div>
+                                <div class="swiper-button-next">
+                                    <img src="img/icon-arrow-next.svg" alt="다음 슬라이드">
+                                </div>
+                            </div>
+                        </div><!-- heading_wrap -->
+                    </div><!-- .inner-big end -->
+                    <div class="list swiper graphic_swiper">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <img src="img/graphic/i_event-01.jpg" alt="일러스트 사용하한 이벤트 페이지">
+                                </a>
+                            </div><!-- item -->
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <img src="img/graphic/i_event-02.jpg" alt="일러스트 사용하한 이벤트 페이지">
+                                </a>
+                            </div><!-- item -->
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <img src="img/graphic/p_event01.jpg" alt="포토샵 사용하한 이벤트 페이지">
+                                </a>
+                            </div><!-- item -->
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <img src="img/graphic/p_event02.jpg" alt="포토샵 사용하한 이벤트 페이지">
+                                </a>
+                            </div><!-- item -->
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <img src="img/graphic/p_sns_event01.jpg" alt="">
+                                </a>
+                            </div><!-- item -->
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <img src="img/graphic/p_sns_event02.jpg" alt="포토샵 사용하한 이벤트 페이지">
+                                </a>
+                            </div><!-- item -->
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <img src="img/graphic/p_sns_event07.jpg" alt="포토샵 사용하한 이벤트 페이지">
+                                </a>
+                            </div><!-- item -->
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <img src="img/graphic/p_sns_event06.jpg" alt="포토샵 사용하한 이벤트 페이지">
+                                </a>
+                            </div><!-- item -->
+                            <div class="swiper-slide item">
+                                <a href="#">
+                                    <img src="img/graphic/p_sns_event05.jpg" alt="포토샵 사용하한 이벤트 페이지">
+                                </a>
+                            </div><!-- item -->
+                        </div><!-- swiper-wrapper -->
+
+                    </div><!-- list.swiper -->
+                </section><!-- graphic -->
+                <section class="section note">
+                    <div class="inner">
+                        <div class="heading">
+                            <h3>Design Notes</h3>
+                            <p>UIUX 디자인 정리 공간 입니다.<br />
+                                수업 자료와 실무 경험을 바탕으로, 디자인 이해를 돕는 개념 정리와 실전 노하우를 함께 담아두었습니다.</p>
+                        </div><!-- heading -->
+
+                        <div class="list">
+                            <div class="item">
+                                <a href="#!">
+                                    <strong>근접성</strong>
+                                    <p><b>작성하는 정보 중에서 비슷한 내용끼리 모으고, 다른 내용은 떨어뜨려 줘야 한다.</b><br />
+                                    관련된 정보끼리 그룹화하여 적절한 간격으로 떨어뜨려 서로 다른 내용임을 시각적으로 인지할 수 있도록 배치해야 한다.</p>
+                                    <!-- <span class="view_more">더보기</span> -->
+                                </a>
+                            </div><!-- .item -->
+                            <div class="item">
+                                <a href="#!">
+                                    <strong>이미지는 왼쪽, 텍스트는 오른쪽에 배치</strong>
+                                    <p>사람의 시선 이동 방향은 <b>보통 왼쪽에서 오른쪽, 위에서 아래</b>로 읽는 시각 패턴을 가지고 있다.<br />
+                                        이때 이미지는 직관적으로 내용을 요약하거나 주목도를 끌어들이는 역할을 하니까 <b>첫눈에 이미지로 관심</b>을 끌고, 그 다음 <b>텍스트로
+                                            설명</b>을 읽게 하는 동선이 자연스럽다.</p>
+                                    <!-- <span class="view_more">더보기</span> -->
+                                </a>
+                            </div><!-- .item -->
+                            <div class="item">
+                                <a href="#!">
+                                    <strong>시각적 계층</strong>
+                                    <p>가장 중요한 정보를 큰 글씨로 상단에 배치하는 등 사용자 시선이 중요한 정보부터 자연스럽게 흐르도록 크기, 색상, 배치로 우선순위를 결정해야 한다. <br />
+                                    <b>글씨 크기</b>를 제목 → 부제목 → 본문 순으로 크기를 줄여 정보의 중요도를 표현해야 한다.<br />
+                                    중요한 요소를 밝거나 대비되는 <b>색상으로 강조</b>할 수 있다.
+                                    </p>
+                                    <!-- <span class="view_more">더보기</span> -->
+                                </a>
+                            </div><!-- .item -->
+                            <div class="item">
+                                <a href="#!">
+                                    <strong>일관성</strong>
+                                    <p>레이아웃 배치, 색상, 글꼴 등을 통일 시켜주어야 한다. 시각적으로 내용 탐색 및 예측에 유리하고 내용을 잘 파악할 수 있도록 도와줄 수 있다. <br />
+                                    요소들에 많은 변화를 주게 된다면 산만하고 복잡하게 되어 사용자들이 원하는 정보를 제공하지 못하게 된다.</p>
+                                    <!-- <span class="view_more">더보기</span> -->
+                                </a>
+                            </div><!-- .item -->
+                            <div class="item">
+                                <a href="https://www.krds.go.kr/html/site/community/community_04_01.html?nttId=2" target="_blank">
+                                    <strong>디자인 체크리스트<img src="img/ico_logo_krds.svg" alt="디지털 정부서비스" class="site_logo"></strong>
+                                    <p><b>디지털 정부서비스 UI/UX 가이드라인 자체 검증 체크리스트</b>는 디지털 정부서비스가 제공하는 '대한민국 정부 디자인 시스템'과 '디지털 정부 서비스 UI/UX 가이드라인'을 준수하여 개발되었는지 점검할 수 있는 도구로 파일을 다운받아 확인할 수 있다.</p>
+                                    <span class="view_more">바로가기</span>
+                                </a>
+                            </div><!-- .item -->
+                            <div class="item">
+                                <a href="#!">
+                                    <strong>4의 배수 디자인의 규칙성</strong>
+                                    <p>디자인의 일관성을 맞추는 방법 중 하나로 모든 요소를 8의 배수 그리드로 만드는 것이였다. 웹사이트 기본 폰트 크기는 16px, 주요 스크린 사이즈들이 8의 배수로 떨어진다. 하지만 8의 배수는 간격의 범위가 넓어지기 때문에 이를 극복하기 위해 나온 것이 <b>4의 배수 그리드</b>다.<br />
+                                    선택할 수 있는 옵션이 많아지고, 작업에서 유연성을 발휘할 수 있다.</p>
+                                    <!-- <span class="view_more">더보기</span> -->
+                                </a>
+                            </div><!-- .item -->
+                        </div><!-- .list end -->
+
+
+                        <a href="" class="btn-view_site">Go to Notion <span>→</span></a>
+                    </div><!-- inner -->
+                </section><!-- .note end -->
+
+                <section class="section reference">
+                    <div class="inner-big">
+                        <div class="heading">
+                            <h3>Reference</h3>
+                            <p>레퍼런스 공간입니다. <br />
+                                프로젝트 개요, 문제 정의, 사용자 메인포인트 분석, 디자인/퍼블리싱 과정인 프로세스페이지, UI가이드, 반응형 브레이크포인트, 접근성 고려,
+                                코드샘플(깃허브)</p>
+                            <a href="#" class="btn-more">view more</a>
+                        </div>
+                        <div class="list">
+                            <div class="item">
+                                <a href="#">
+                                    <div class="info_wrap">
+                                        <div class="logo">
+                                            <img src="img/category/logo-pinterest.svg" alt="핀터레스트">
+                                        </div><!-- logo -->
+                                        <div class="info">
+                                            <strong>pinterest</strong>
+                                            <p>사용자가 관심 있는 이미지나 비디오를 핀보드에 수집하고 공유하는 시각적 탐색 및 검색엔진 사이트로 웹디자이너들이 영감, 리소스
+                                                수집,
+                                                포트폴리오 홍보등으로 활용</p>
+                                        </div><!-- .info end -->
+                                    </div><!-- info_wrap end-->
+                                    <ul class="tag">
+                                        <li>방법</li>
+                                        <li>디자인</li>
+                                        <li>저장</li>
+                                    </ul>
+                                </a>
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <a href="#">
+                                    <div class="info_wrap">
+                                        <div class="logo">
+                                            <img src="img/category/logo-unsplash.svg" alt="언스플레쉬">
+                                        </div><!-- logo -->
+                                        <div class="info">
+                                            <strong>unsplash</strong>
+                                            <p>고해상도 무료 스톡 사진을 제공하는 웹사이트, 모든 이미지는 상업적 및 비상업적 목적으로 자유롭게 사용가능</p>
+                                        </div><!-- .info end -->
+                                    </div><!-- info_wrap end-->
+                                    <ul class="tag">
+                                        <li>방법</li>
+                                        <li>디자인</li>
+                                        <li>저장</li>
+                                    </ul>
+                                </a>
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <a href="#">
+                                    <div class="info_wrap">
+                                        <div class="logo">
+                                            <img src="img/category/logo-pinterest.svg" alt="핀터레스트">
+                                        </div><!-- logo -->
+                                        <div class="info">
+                                            <strong>핀터레스트</strong>
+                                            <p>사용자가 관심 있는 이미지나 비디오를 핀보드에 수집하고 공유하는 시각적 탐색 및 검색엔진 사이트로 웹디자이너들이 영감, 리소스
+                                                수집,
+                                                포트폴리오 홍보등으로 활용</p>
+                                        </div><!-- .info end -->
+                                    </div><!-- info_wrap end-->
+                                    <ul class="tag">
+                                        <li>방법</li>
+                                        <li>디자인</li>
+                                        <li>저장</li>
+                                    </ul>
+                                </a>
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <a href="#">
+                                    <div class="info_wrap">
+                                        <div class="logo">
+                                            <img src="img/category/logo-pinterest.svg" alt="핀터레스트">
+                                        </div><!-- logo -->
+                                        <div class="info">
+                                            <strong>핀터레스트</strong>
+                                            <p>사용자가 관심 있는 이미지나 비디오를 핀보드에 수집하고 공유하는 시각적 탐색 및 검색엔진 사이트로 웹디자이너들이 영감, 리소스
+                                                수집,
+                                                포트폴리오 홍보등으로 활용</p>
+                                        </div><!-- .info end -->
+                                    </div><!-- info_wrap end-->
+                                    <ul class="tag">
+                                        <li>방법</li>
+                                        <li>디자인</li>
+                                        <li>저장</li>
+                                    </ul>
+                                </a>
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <a href="#">
+                                    <div class="info_wrap">
+                                        <div class="logo">
+                                            <img src="img/category/logo-pinterest.svg" alt="핀터레스트">
+                                        </div><!-- logo -->
+                                        <div class="info">
+                                            <strong>핀터레스트</strong>
+                                            <p>사용자가 관심 있는 이미지나 비디오를 핀보드에 수집하고 공유하는 시각적 탐색 및 검색엔진 사이트로 웹디자이너들이 영감, 리소스
+                                                수집,
+                                                포트폴리오 홍보등으로 활용</p>
+                                        </div><!-- .info end -->
+                                    </div><!-- info_wrap end-->
+                                    <ul class="tag">
+                                        <li>방법</li>
+                                        <li>디자인</li>
+                                        <li>저장</li>
+                                    </ul>
+                                </a>
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <a href="#">
+                                    <div class="info_wrap">
+                                        <div class="logo">
+                                            <img src="img/category/logo-pinterest.svg" alt="핀터레스트">
+                                        </div><!-- logo -->
+                                        <div class="info">
+                                            <strong>핀터레스트</strong>
+                                            <p>사용자가 관심 있는 이미지나 비디오를 핀보드에 수집하고 공유하는 시각적 탐색 및 검색엔진 사이트로 웹디자이너들이 영감, 리소스
+                                                수집,
+                                                포트폴리오 홍보등으로 활용</p>
+                                        </div><!-- .info end -->
+                                    </div><!-- info_wrap end-->
+                                    <ul class="tag">
+                                        <li>방법</li>
+                                        <li>디자인</li>
+                                        <li>저장</li>
+                                    </ul>
+                                </a>
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <a href="#">
+                                    <div class="info_wrap">
+                                        <div class="logo">
+                                            <img src="img/category/logo-pinterest.svg" alt="핀터레스트">
+                                        </div><!-- logo -->
+                                        <div class="info">
+                                            <strong>핀터레스트</strong>
+                                            <p>사용자가 관심 있는 이미지나 비디오를 핀보드에 수집하고 공유하는 시각적 탐색 및 검색엔진 사이트로 웹디자이너들이 영감, 리소스
+                                                수집,
+                                                포트폴리오 홍보등으로 활용</p>
+                                        </div><!-- .info end -->
+                                    </div><!-- info_wrap end-->
+                                    <ul class="tag">
+                                        <li>방법</li>
+                                        <li>디자인</li>
+                                        <li>저장</li>
+                                    </ul>
+                                </a>
+                            </div><!-- .item end -->
+                        </div><!-- .list end -->
+                    </div><!-- .inner end -->
+                </section><!-- .reference -->
+
+                
+            </div><!-- .container -->
+
+
+
+
+        </main><!-- #main -->
+        <footer id="footer" class="footer">
+            <strong>ha su jeogn</strong>
+            <ul>
+                <li><a href="https://www.notion.so/2bf427abb2af80999d73f3a4a3638706?v=2bf427abb2af81ad84be000cbbdee02d&source=copy_link" target="_blank">notion</a></li>
+                <li><a href="#">github</a></li>
+            </ul>     
+            <p>ⓒ 2025 by 하수정</p>
+            <p>본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다</p>
+        </footer><!-- #footer end -->
+    </div><!-- #wrap -->
+
+
+</body>
+
+</html>

@@ -465,7 +465,7 @@ body {
 
 /* graphic start */
 .graphic {
-    margin: 10rem 0;
+    padding: 10rem 0;
     position: relative;
     .heading_wrap {
         position: relative;
@@ -612,8 +612,8 @@ body {
         .item {
             width: 348px;
             height: 452px;
-            background-color: rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(7px);
+            background-color: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(8px);
             border: 1px solid rgba(255, 255, 255, 0.4);
             border-radius: 0.8rem;
             color: #fff;
@@ -633,8 +633,11 @@ body {
                     display: block;
                     margin-bottom: 14px;
                 }
+                p {
+                    line-height: 1.6;
+                }
             }
-            &:nth-child(odd) {
+            &:nth-child(even) {
                 margin-top: 8rem;
             }
             .logo {
@@ -646,6 +649,7 @@ body {
             .tag {
                 li {
                     color: rgba(255, 255, 255, 0.7);
+                    font-size: 1.4rem;
                 }
             }
         }

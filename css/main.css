@@ -429,7 +429,7 @@ body {
 
 /* graphic start */
 .graphic {
-  margin: 10rem 0;
+  padding: 10rem 0;
   position: relative;
 }
 .graphic .heading_wrap {
@@ -567,9 +567,9 @@ body {
 .reference .list .item {
   width: 348px;
   height: 452px;
-  background-color: rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 0.8rem;
   color: #fff;
@@ -591,7 +591,10 @@ body {
   display: block;
   margin-bottom: 14px;
 }
-.reference .list .item:nth-child(odd) {
+.reference .list .item .info p {
+  line-height: 1.6;
+}
+.reference .list .item:nth-child(even) {
   margin-top: 8rem;
 }
 .reference .list .item .logo {
@@ -602,6 +605,7 @@ body {
 }
 .reference .list .item .tag li {
   color: rgba(255, 255, 255, 0.7);
+  font-size: 1.4rem;
 }
 
 /* reperence */

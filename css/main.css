@@ -43,6 +43,9 @@ body {
   line-height: 1.4;
   font-size: var(--font-size-md);
   overflow-x: hidden;
+  min-width: 1400px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .inner {
@@ -269,6 +272,11 @@ body {
   display: flex;
   padding-left: 50%;
   /* .item end */
+}
+@media screen and (max-width: 1024px) {
+  .newItem .list_wrap {
+    padding-left: 0;
+  }
 }
 .newItem .list_wrap .item {
   width: 600px;

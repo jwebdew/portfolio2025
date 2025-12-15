@@ -46,6 +46,7 @@
 html,
 body {
     font-size: 62.5%; /* 10px */
+   
 }
 body {
     font-family: var(--font-family-basic);
@@ -54,6 +55,9 @@ body {
     font-size: var(--font-size-md);
     // background-color: #f6f7f2;
     overflow-x: hidden;
+     min-width: 1400px;
+     max-width: 1920px;
+    margin: 0 auto;
 }
 
 .inner {
@@ -292,13 +296,16 @@ body {
         display: flex;
         align-items: center;
     }
+
     .list_wrap {
         // width: 250vw;
         display: flex;
         padding-left: 50%;
 
         // margin-left: 200px;
-
+        @media screen and (max-width: 1024px) {
+            padding-left: 0;
+        }
         .item {
             width: 600px;
 

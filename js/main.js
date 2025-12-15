@@ -1,51 +1,59 @@
 
 $(function () {
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
- 
-
-    history.scrollRestoration = "auto";
-    //첫번째 section의 item 가로 스크롤
-
-    // let itemW = $('#newItems .item').outerWidth(true);
-    // let itemLength = $('#newItems .item').length;
-
-    // $('#newItems').width(itemW * itemLength);
-
-    const horTextAnimation = () => {
-        // FOR RESPONSIVE
-       /*  const triggers = ScrollTrigger.getAll();
-        triggers.forEach((trigger) => trigger.kill()); 이 코드로 인해 스크롤 줌이 실행이 안됨*/
-        // TARGET ELEMENT
-        const horText = document.querySelector(".newItem .list_wrap");
-        if (horText) {
-            // ANIMAATION
-            console.log(horText.offsetWidth)
-            console.log(window.innerWidth)
-            gsap.to(horText, {
-                x: () => -(horText.offsetWidth - window.innerWidth / 2),
-                ease: "linear",
-                scrollTrigger: {
-                    trigger: ".newItem",
-                    pin: true,
-                    scrub: true,
-                    invalidateOnRefresh: true,
-                    end: () => `+=${horText.offsetWidth - window.innerWidth / 2}`
-                },
-
-            });
 
 
+    if (window.matchMedia("(max-width: 1024px)").matches) {
+        //화면 너비 1024px 이하일 때 특정 클래스 추가
+         
+    } else {
+        // 화면의 크기가 1024px 이상 일 때 마우스 휠 가로 스크롤 진행
+        history.scrollRestoration = "auto";
+        //첫번째 section의 item 가로 스크롤
 
-            // REFRESH
-            ScrollTrigger.refresh();
-        }
-    };
-    // RUN ANIMATION
-    horTextAnimation();
-    // RESPONSIVE
-    window.addEventListener("resize", horTextAnimation);
+        // let itemW = $('#newItems .item').outerWidth(true);
+        // let itemLength = $('#newItems .item').length;
 
-    
+        // $('#newItems').width(itemW * itemLength);
+
+        const horTextAnimation = () => {
+            // FOR RESPONSIVE
+            /*  const triggers = ScrollTrigger.getAll();
+             triggers.forEach((trigger) => trigger.kill()); 이 코드로 인해 스크롤 줌이 실행이 안됨*/
+            // TARGET ELEMENT
+            const horText = document.querySelector(".newItem .list_wrap");
+            if (horText) {
+                // ANIMAATION
+                console.log(horText.offsetWidth)
+                console.log(window.innerWidth)
+                gsap.to(horText, {
+                    x: () => -(horText.offsetWidth - window.innerWidth / 2),
+                    ease: "linear",
+                    scrollTrigger: {
+                        trigger: ".newItem",
+                        pin: true,
+                        scrub: true,
+                        invalidateOnRefresh: true,
+                        end: () => `+=${horText.offsetWidth - window.innerWidth / 2}`
+                    },
+
+                });
+
+
+
+                // REFRESH
+                ScrollTrigger.refresh();
+            }
+        };
+        // RUN ANIMATION
+        horTextAnimation();
+        // RESPONSIVE
+        window.addEventListener("resize", horTextAnimation);
+
+    }
+
+
+
     //-------------------------------------------------
     //포트폴리오
     //스크롤하다가 해당 콘텐츠에 멈춤
@@ -85,24 +93,24 @@ $(function () {
     let portfolioItem = document.querySelectorAll('.portfolio .item');
     let portfolioMenu = document.querySelectorAll('.portfolio .menu li');
 
-    for(let i = 0; i < portfolioMenu.length; i++) {
+    for (let i = 0; i < portfolioMenu.length; i++) {
         portfolioMenu[i].addEventListener('click', () => {
             portfolioMenu.forEach(portfolioMenu => {
                 portfolioMenu.classList.remove('active');
-            }) 
+            })
             portfolioMenu[i].classList.add('active');
 
             portfolioItem.forEach(portfolioItem => {
                 portfolioItem.classList.remove('active');
-            }) 
+            })
             portfolioItem[i].classList.add('active');
         });//portfolioMenu.click()
     }
 
 
     //팬시박스
-     Fancybox.bind("[data-fancybox]", {
+    Fancybox.bind("[data-fancybox]", {
         // Your custom options
-      });
+    });
 
 }) 

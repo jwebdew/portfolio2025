@@ -199,6 +199,10 @@ body {
   margin-bottom: 12rem;
   line-height: 1.6;
 }
+.main_visual .text_wrap p span {
+  display: block;
+  margin-top: var(--margin-28);
+}
 
 .content_wrap {
   margin-top: 100vh;

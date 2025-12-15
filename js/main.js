@@ -74,10 +74,10 @@ $(function () {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        autoplay: {
+        /* autoplay: {
             delay: 3000,
             disableOnInteraction: false,
-        },
+        }, */
     });
 
 
@@ -98,5 +98,11 @@ $(function () {
             portfolioItem[i].classList.add('active');
         });//portfolioMenu.click()
     }
+
+
+    //팬시박스
+     Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
 
 }) 

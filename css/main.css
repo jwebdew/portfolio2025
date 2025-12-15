@@ -250,10 +250,10 @@ body {
   margin-top: 6rem;
 }
 .newItem .web-btns li:first-child {
-  background-color: #EDE1F6;
+  background-color: #ede1f6;
 }
 .newItem .web-btns li:last-child {
-  background-color: #E5E1E9;
+  background-color: #e5e1e9;
 }
 .newItem .list {
   height: 76vh;
@@ -604,6 +604,13 @@ body {
 .reference .list .item .logo img {
   width: 100%;
 }
+.reference .list .item .logo-size-width {
+  height: 20px;
+}
+.reference .list .item .logo-size-width img {
+  width: auto;
+  height: 100%;
+}
 .reference .list .item .tag li {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.4rem;
@@ -615,6 +622,8 @@ body {
   position: relative;
   z-index: 1;
   color: #3b3b3b;
+  text-align: center;
+  padding: 8rem 0;
 }
 .footer strong {
   display: block;

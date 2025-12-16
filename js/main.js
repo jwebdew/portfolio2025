@@ -89,7 +89,7 @@ $(function () {
     });
 
 
-    //포트폴리오 탭메뉴
+    /* //포트폴리오 탭메뉴 !! 20251216 삭제함
     let portfolioItem = document.querySelectorAll('.portfolio .item');
     let portfolioMenu = document.querySelectorAll('.portfolio .menu li');
 
@@ -105,12 +105,13 @@ $(function () {
             })
             portfolioItem[i].classList.add('active');
         });//portfolioMenu.click()
-    }
+    } */
 
 
     //팬시박스
     Fancybox.bind("[data-fancybox]", {
         // Your custom options
     });
+     
 
 }) 
